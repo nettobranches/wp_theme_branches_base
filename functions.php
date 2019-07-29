@@ -61,6 +61,7 @@ add_action('after_setup_theme', 'branches_base_setup');
 function branches_base_scripts() {
 	
 	wp_enqueue_style('bootstrap-style',  get_template_directory_uri().'/assets/bootstrap/css/bootstrap.min.css' );
+    wp_enqueue_style('ionicons-style', get_template_directory_uri().'/assets/fonts/font-awesome.min.css' );
     wp_enqueue_style('ionicons-style', get_template_directory_uri().'/assets/fonts/ionicons.min.css' );
     wp_enqueue_style('swiper-style', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css' );
     wp_enqueue_style('styles-style',  get_template_directory_uri().'/assets/css/styles.min.css' );

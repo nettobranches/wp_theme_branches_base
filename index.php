@@ -13,6 +13,17 @@
 ?>
 <?php get_header(); ?>
 
+        <?php 
+        if( is_front_page()){ 
+
+            get_template_part( 'content', 'carousel' );
+            get_template_part( 'content', 'services' );
+            /*get_template_part( 'content', 'shop' );
+*/
+        } // end is_front_page()
+        ?>
+
+
 <?php
 	if ( have_posts() ) : ?>
 
